@@ -779,6 +779,7 @@ type DomainInterface struct {
 	XMLName             xml.Name                    `xml:"interface"`
 	Managed             string                      `xml:"managed,attr,omitempty"`
 	TrustGuestRXFilters string                      `xml:"trustGuestRxFilters,attr,omitempty"`
+	Type                string                      `xml:"type,attr,omitempty"`
 	MAC                 *DomainInterfaceMAC         `xml:"mac"`
 	Source              *DomainInterfaceSource      `xml:"source"`
 	Boot                *DomainDeviceBoot           `xml:"boot"`
